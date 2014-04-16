@@ -1,85 +1,232 @@
 * {
-    box-sizing: border-box;
-    margin: 0
-    padding: 0
-}
+	margin:0;
+	padding:0;
+	font-family: Lucida Grande, Georgia, Arial;
+	}
+	
+/*Background for my site*/
 
-h1 {
-    color: #C71585;
-    font-family: georgia;
-    display:inline; 
-}
+/*CSS for background taken from http://garageagency.co/ */
+#background { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-image:url("bckcolor.jpg"); 
+	}
 
-h4 {
-    color: #C71585;
-    font-feature-settings: italic;
-}
+/*Header for my site*/
 
-h2 {
-    color: #FFD700;
-    font-size: 21px;
-}
-i {
-    color: #C71585;
-}
-p {
-    font-size: 18px;
-    font-family: georgia;
-}
+header	{
+	background-image:url("LOGO.jpg"); 
+	width:900px;
+	height:200px;
+	margin-left: auto;   
+	margin-right: auto; 
+	padding-bottom:0px;
+	padding-top:50px;
+	}
+	
+/*Wrapper for my site*/
 
-img {
-    border: 5px solid #F0FFFF;
-}
-img {
-    clear:left;
-    float:right;
-    margin: 10px;
-}
+#wrapper {
+	width:960px;
+	overflow:auto;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:white;
+	padding-bottom:50px;
+	padding-top:25px;
+	}
+
+/*Links*/
+
+a	{
+	color:#CC66CC; /*teal*/
+	text-decoration:none;
+	}
+
+article a:visited, a:focus	{
+	color:#CC66CC; /*teal*/
+	text-decoration:none;
+	}	
+
+/*Top Navigation */
+nav {
+	width:960px;
+	font-size:24px;
+	}
+
 nav a {
-    font-family: arial;
-    font-size: 13px;
-    background-color:#F0FFFF;
-    text-decoration:inline;
-    display: inline-block;
-}
-
+	color:white;
+	background-color:#CC66CC;/*teal*/
+	text-decoration:none;
+	padding:7px;/*padding of the text inside the box*/
+	display:inline-block;
+	}
+	
 nav a:hover {
-    border-bottom : 2px solid #FFD700;
-}
-footer {
-    font-family: arial;
-    font-size: 9px;
-    background-color:#F0FFFF;
-    display:inline-block;
-}
-p1 {
-    font-size: 11px;
-    text-decoration: none;
-}
+	color:#CC66CC;
+	text-decoration:none;
+	background-color:#FFFF66;
+	}
 
-header h1 {
-    display: inline;
-}
-header a:link {}
-header a:visited
-header a:hover {
-    color: #FFF;
-}
-header a:active {
-    text-decoration: none;
-}
-header a:focus {}
+.nav	{ /*CSS for this nav style taken from a tutorial at http://csswizardry.com/2011/01/create-a-centred-horizontal-navigation/*/
+    list-style:none;
+    padding:0px;
+    margin:0px;
+    text-align:center;
+    border-width:1px 0;
+    border:1px white;
+	}
+	
+.nav li	{
+    display:inline; /*to get all of the tabs in aline at the top*/
+	}
+	
+.nav a	{
+    display:inline-block; /*to get all of the boxes to be individual boxes*/
+    padding:10px;
+	}
 
-li {
-    color: #708090;
-}
 
-.third {
-    float: right;
-    width: 33%
-}
+/*Page Content*/
 
-.half {
-    float: right;
-    width: 40%
-}
+article {
+	margin:30px 30px 10px 30px;
+	}
+
+h1	{
+	font-size: 24px;
+	margin-bottom:5px;
+	font-style:italic;
+	margin-top:10px;
+	}
+
+h2	{
+	font-size: 18px;
+	padding:2px;
+	margin-left:10px;
+	}
+	
+h2.space	{ /*Give space around my h2s on my Logo Design page*/
+	padding-top:15px;
+	padding-bottom:15px;
+	}
+
+h3	{
+	font-size: 14px;
+	padding:2px;
+	line-height:1.3;
+	margin-left:20px;
+	margin-bottom:20px;
+	}
+
+section	{
+	margin-left:210px;
+	}
+	
+section.center	{  /*Centers content on Portfolio page*/
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	}
+
+p	{
+	font-family:Georgia, Times-New-Roman, Lucida Grande;
+	font-size:14px;
+	text-indent:20px;
+	margin:10px;
+	}
+	
+/*Lists*/
+article ul	{ /*Allows me to indent the entire list*/
+    list-style-position:inside;
+    text-indent:20px;
+    color:#FFFF66;
+    font-style:italic;
+    padding:10px
+	}
+
+article ul span	{ /*Get text #CC66CC and bullets #FFFF66*/
+	color:#CC66CC;	
+	}
+
+/*Contact Page*/
+
+article a.space	{
+	padding:10px; /*Space around the individual contact links*/
+	}
+
+article p.indent	{ /*Get all of the contact links centered and in a line*/
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	}
+	
+/*Photos*/
+img	{
+	margin:3px;
+	}
+
+img.center	{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	}
+
+.left {
+	margin-right:15px;
+	float:left;
+	}
+		
+.right {
+	margin-left:15px;
+	float:right;
+	}
+
+#Profile picture 	{ /*For photo on homepage*/
+	width:210px;
+	font-size:11px;
+	}
+
+#cap, #cap3	{ /*For vertical photos on Portfolio Photography page*/
+	width:175px;
+	font-size:11px;
+	}
+	
+#cap2, #cap4 	{ /*For horizontal photos on Portfolio Photography page*/
+	width:263px;
+	font-size:11px;
+	}
+
+/*Footer Navigation */
+footer nav {
+	width:960px;
+	font-size:11px;
+    text-align:center;
+    list-style:none;
+	}
+
+footer nav a {
+	display:inline-block;
+	color:white;
+	background-color:#CC66CC;
+	text-decoration:none;
+	padding:5px;
+	}
+	
+footer nav a:hover,a:focus {
+	color:#CC66CC;
+	text-decoration:none;
+	background-color:#FFFF66;
+	}
+
+footer nav p { /*Text inside my footer navigation */
+	line-height:-2px;
+	font-size:9px;
+	text-indent:0px;
+	}
